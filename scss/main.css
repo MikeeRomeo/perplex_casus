@@ -877,7 +877,7 @@ h1, h2, h3, h4 {
   font-size: 36px;
 }
 .banner__title-tags {
-  width: 100vw;
+  width: 90vw;
   max-width: 1400px;
 }
 .banner__title-tags h2 {
@@ -957,6 +957,16 @@ h1, h2, h3, h4 {
   content: "";
   display: block;
   padding-bottom: 100%;
+}
+
+.brands {
+  margin: 120px auto 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+.brands img {
+  max-height: 80px;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
