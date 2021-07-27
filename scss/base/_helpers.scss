@@ -1,0 +1,21 @@
+.hidden-mobile {
+  @include respond-below(sm) {
+    display: none !important;
+  }
+}
+
+.mobile-only{
+  &--flex, &--block{
+    display: none !important;
+  }
+
+  @include respond-below(sm) {
+    &--flex{
+      display: flex !important;
+    }
+
+    &--block{
+      display: block !important;
+    }
+  }
+}
