@@ -362,6 +362,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.pacifico {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+}
+
 html, body, main, #app {
   margin: 0;
   padding: 0;
@@ -394,12 +399,17 @@ body {
 
 p {
   font-size: 14px;
-  font-weight: normal;
-  line-height: 1.21;
+  font-weight: 500;
+  line-height: 1.6;
   margin-bottom: 0;
+  color: #737091;
 }
 p b {
   font-weight: bold;
+}
+
+h1, h2, h3, h4 {
+  color: #2c2851;
 }
 
 @media screen and (max-width: -1px) {
@@ -452,10 +462,10 @@ p b {
   }
 }
 .container {
-  max-width: 1640px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .container--fluid {
   margin: 0;
@@ -848,6 +858,105 @@ p b {
   .container__col-xl-offset-12 {
     margin-left: 100%;
   }
+}
+
+.banner {
+  position: relative;
+}
+.banner__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  position: absolute;
+  z-index: 5;
+  margin-top: 50%;
+  top: -50%;
+}
+.banner__title {
+  font-size: 36px;
+}
+.banner__title-tags {
+  width: 100vw;
+  max-width: 1400px;
+}
+.banner__title-tags h2 {
+  font-size: 8vw;
+  font-weight: 700;
+  margin: 0;
+}
+.banner__title-tags img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  mix-blend-mode: lighten;
+}
+.banner__text {
+  font-size: 20px;
+}
+.banner__image {
+  width: 60%;
+  margin-left: auto;
+}
+.banner__image img {
+  width: 100%;
+}
+
+.navbar {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  align-items: center;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+#logo img {
+  max-width: 40px;
+}
+#logo h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 12px;
+}
+
+.nav {
+  margin-left: auto;
+}
+.nav__link {
+  color: #2c2851;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 30px;
+  padding: 5px;
+  transition: color 0.15s ease-in-out;
+}
+.nav__link:hover, .nav__link:active {
+  color: #efa8a8;
+}
+
+.square-image {
+  position: relative;
+}
+.square-image__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.square-image__button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.square-image::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

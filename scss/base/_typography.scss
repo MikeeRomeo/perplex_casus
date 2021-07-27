@@ -1,8 +1,16 @@
 p{
   font-size: 14px;
-  font-weight: normal;
-  line-height: 1.21;
+  font-weight: 500;
+  line-height: 1.6;
   margin-bottom: 0;
+  color: $light-blue;
 
   b{ font-weight: bold }
 }
+
+h1, h2, h3, h4{
+  color: $dark-blue;
+}
+
+
+
