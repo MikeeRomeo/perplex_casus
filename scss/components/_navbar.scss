@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-#logo{
+.logo{
   display: flex;
   align-items: center;
 
@@ -35,5 +35,18 @@
     &:hover, &:active{
       color: $pink;
     }
+
+    &--social{
+      font-size: 1.75rem;
+      margin-left: 20px;
+    }
+  }
+
+  &--footer{
+    margin-left: 0;
+  }
+
+  &--social{
+    margin-left: auto;
   }
 }

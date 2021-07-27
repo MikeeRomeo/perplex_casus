@@ -1,0 +1,57 @@
+.contact-form{
+  max-width: 986px;
+  margin: 0 auto;
+
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .field, .message{
+    background: white;
+    color: $dark-blue;
+    padding: 30px;
+    font-size: 1.25rem;
+
+    &::placeholder{
+      color: $light-blue;
+    }
+  }
+
+  .field{
+    width: calc(50% - 15px);
+    margin-bottom: 30px;
+  }
+
+  .message{
+    width: 100%;
+    resize: none;
+  }
+
+  button[type="submit"]{
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    background: #62ba55;
+    color: white;
+    font-size: 1.25rem;
+    border: none;
+    margin-left: 30px;
+    cursor: pointer;
+
+    span{
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+input, textarea{
+  outline: none;
+  border: 2px solid white;
+
+  &:focus{
+    border: 2px solid $light-blue;
+  }
+}

@@ -15,7 +15,7 @@
   }
 
   &__title{
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 
   &__title-tags{
@@ -27,7 +27,7 @@
       // media querie hier
       font-size: 8vw;
       font-weight: 700;
-      margin: 0;
+      margin: 0 0 0 -7px;
     }
 
     img{
@@ -40,12 +40,13 @@
   }
 
   &__text{
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   &__image{
     width: 60%;
     margin-left: auto;
+
     img{
       width: 100%;
     }
