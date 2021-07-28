@@ -16,11 +16,28 @@
     color: $dark-blue;
     font-size: 1em;
     font-weight: 700;
-    padding: 30px;
+    padding: 15px;
     background: white;
+
+    i, span{
+      transition: all 0.15s ease-in-out;
+    }
 
     span{
       margin-right: 20px;
+    }
+
+    @include respond-above(md){
+      padding: 30px;
+    }
+
+    &:hover, &:active{
+      span{
+        margin-right: 16px;
+      }
+      i{
+        transform: translateX(8px);
+      }
     }
   }
 

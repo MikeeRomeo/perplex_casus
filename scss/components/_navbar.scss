@@ -1,7 +1,12 @@
 .navbar{
-  padding-top: 70px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   align-items: center;
+
+  @include respond-above(xs){
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
 }
 
 .logo{
@@ -21,14 +26,14 @@
 }
 
 .nav{
-  margin-left: auto;
+  padding-top: 15px;
 
   &__link{
     color: $dark-blue;
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
     font-weight: 600;
-    margin-left: 30px;
+    margin-left: 10px;
     padding: 5px;
     transition: color 0.15s ease-in-out;
 
@@ -36,17 +41,40 @@
       color: $pink;
     }
 
-    &--social{
-      font-size: 1.75rem;
-      margin-left: 20px;
+    &:first-child{
+      margin-left: 0;
     }
-  }
 
-  &--footer{
-    margin-left: 0;
+
   }
 
   &--social{
+    margin-top: 30px;
+  }
+  @include respond-above(xs) {
     margin-left: auto;
+    padding-top: 0;
+  }
+
+  @include respond-above(sm){
+
+    &--footer{
+      margin-left: 0;
+    }
+
+    .nav__link{
+      margin-left: 30px;
+      font-size: 16px;
+
+      &--social{
+        font-size: 1.75rem;
+        margin-left: 20px;
+      }
+    }
+
+    &--social{
+      margin-left: auto;
+      margin-top: 0;
+    }
   }
 }

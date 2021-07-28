@@ -4,7 +4,7 @@
   flex-direction: column;
 
   &__intro{
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin: 0 0 20px;
     display: flex;
     align-items: center;
@@ -22,9 +22,10 @@
   }
 
   &__title{
-    font-size: 5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     margin: 0;
+
   }
 
   &__subtitle{
@@ -33,9 +34,10 @@
 
   &__title__row{
     display: flex;
-    align-items: center;
+    align-items: start;
     width: 100%;
-    margin: 30px 0 60px;
+    margin: 15px 0 40px;
+    flex-direction: column;
   }
 
   &__title__row--centered{
@@ -44,14 +46,25 @@
   }
 
   &__button{
-    margin-left: auto;
+    margin-left: 0;
     color: $dark-blue;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.25rem;
+    margin-top: 10px;
+    flex-shrink: 0;
 
     i{
+      transition: all 0.15s ease-in-out;
       margin-left: 20px;
+    }
+
+    &:hover, &:active{
+
+      i{
+        transform: translateX(8px);
+        margin-left: 16px;
+      }
     }
   }
 
@@ -64,6 +77,40 @@
 
     i{
       transform: rotate(-45deg);
+    }
+  }
+
+  @include respond-above(xs){
+
+    .section__intro{
+      font-size: 1.25rem;
+    }
+
+    .section__title{
+      font-size: 3.5rem;
+    }
+
+    .section__title__row{
+      flex-direction: row;
+      align-items: center;
+      margin: 30px 0 60px;
+    }
+
+    .section__title__row--centered{
+      flex-direction: column;
+    }
+
+    .section__button{
+      margin-top: 0;
+      margin-left: auto;
+    }
+
+
+  }
+
+  @include respond-above(lg){
+    .section__title{
+      font-size: 5rem;
     }
   }
 
